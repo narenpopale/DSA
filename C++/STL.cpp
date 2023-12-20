@@ -30,7 +30,7 @@ int main() {
     v.push_back(1); // add element in last
     v.pop_back(); // delete last element
 
-    cout << v.capacity() << endl; // capacity() returns memory allocated to a vector - Every time when new element gets added capacity of vector gets double
+    cout << v.capacity() << endl; // capacity() returns memory allocated to a vector - Every time when new element gets added capacity of vector becomes double
     cout << v.size() << endl; // size() returns no. of elements in the vector
 
     v.clear(); // Size will becomes zero but capacity remains same
