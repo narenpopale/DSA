@@ -35,5 +35,25 @@ int main() {
 
     v.clear(); // Size will becomes zero but capacity remains same
 
+    cout << v.at(0) << endl; // accessing the element
+
+
+
+    // 3) Deque - Double ended queue, we can do operations on both the sides front and back
+    deque<int> d;
+
+    d.push_front(1); // push element at first index
+    d.push_back(2);  // push element at last index
+
+    d.pop_front();  // pop element at first index
+    d.pop_back();   // pop element at last index
+
+    cout << d.at(0) << endl; // accessing the element
+    cout << d.front() << endl;  // accessing firt element
+    cout << d.back() << endl;   // accessing last element
+
+    cout << d.empty() << endl;   // checking is empty
+
+
     return 0;
 }
