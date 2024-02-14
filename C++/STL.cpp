@@ -40,6 +40,8 @@ int main() {
 
 
     // 3) Deque - Double ended queue, we can do operations on both the sides front and back
+    // - It gets implemented by multiple static arrays
+
     deque<int> d;
 
     d.push_front(1); // push element at first index
@@ -53,6 +55,31 @@ int main() {
     cout << d.back() << endl;   // accessing last element
 
     cout << d.empty() << endl;   // checking is empty
+
+
+
+    // 3) List - we can do operations on both the sides front and back
+    // - It gets implemented by doubly linkedlist
+
+    list<int> l; // Declaration
+    list<int> ll(5, 100); // Declaration and Initialization
+
+    l.push_front(1); // push element at first index
+    l.push_back(2);  // push element at last index
+
+    l.pop_front();  // pop element at first index
+    l.pop_back();   // pop element at last index
+
+    cout << l.front() << endl;  // accessing firt element
+    cout << l.back() << endl;   // accessing last element
+
+    cout << l.empty() << endl;   // checking is empty
+
+
+    // for accessing the elements we need to traverse on list
+    for(auto i: l) {
+        cout << i << endl;
+    }
 
 
     return 0;
